@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(41, 40, 40);
+}
+
+#heading{
+    color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    text-align: center;
+}
