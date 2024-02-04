@@ -1,10 +1,83 @@
-body{
-    background-color: rgb(41, 40, 40);
+body {
+    background-color: #0A0A0A;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    scrollbar-width: none;
+}
+@font-face {
+    font-family: 'custom';
+    src: url('../assets/fonts/Slowdex.ttf') format('trueType');
 }
 
-#heading{
-    color: aqua;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 0;
+@font-face {
+    font-family: 'heading';
+    src: url('../assets/fonts/LEMONMILK-Bold.otf') format('openType');
+}
+
+@font-face {
+    font-family: 'paragraph';
+    src: url('../assets/fonts/coolvetica\ condensed\ rg.otf') format('openType');
+}
+
+#sub-head{
+    font-family: 'custom';
+    color: whitesmoke;
     text-align: center;
 }
+
+
+#heading {
+    color: #950740;
+    font-family: 'heading';
+    text-align: center; /* Center the heading */
+}
+
+/* Hide scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes gradient2{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
+
+#passion {
+    font-family: 'paragraph';
+    background-image: linear-gradient(to right,
+        #FF6978,
+        #B2EE9B,
+        #38AECC,
+        #66ff99,
+        #DAFF7D,
+        #2f00ff,
+        #a200ff,
+        #ff0040,
+        #00ff6a,
+        #f7b733,
+        #FF6978 /* Duplicate the first color at the end */
+    );
+    background-size: 200% auto;
+    color: transparent; /* Make the text transparent */
+    background-clip: text; /* Clip the gradient to the text */
+    -webkit-background-clip: text; /* For Safari */
+    animation: gradient2 10s linear ;
+    font-size: larger;
+    text-align: center;
+}
+
+#foot{
+    font-family: 'paragraph';
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Choose your desired background color */
+    padding: 10px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
